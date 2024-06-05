@@ -8,9 +8,15 @@ public class Contador {
 		System.out.println("Digite o segundo parâmetro");
 		int parametroDois = scanner.nextInt();
         scanner.close();
+        
         try{
         contar(parametroUm, parametroDois);
-        }
+        int contagem = parametroDois-parametroUm;
+    
+        for (int parametro = 1 ; parametro <= parametroDois; contagem ++) {
+            System.out.println("Imprimindo  " + contagem++);
+        }      
+    }
         catch(Exception e) {
             System.out.println("O segundo parâmetro deve ser maior que o primeiro.");
     }
@@ -19,7 +25,7 @@ public class Contador {
 		if (parametroUm >= parametroDois){
             throw new ParametrosInvalidosException ("O segundo parâmetro deve ser maior que o primeiro.");
         }else {
-            for (int parametro = 1 ; parametro <= parametroDois ; parametro ++) {
+            for (int parametro = 1 ; parametro <= parametroDois - parametroUm ; parametro ++) {
 	            int numero = parametroDois - parametroUm;
                 System.out.println("Imprimindo o número  " + numero++);
             }
