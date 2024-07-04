@@ -4,7 +4,7 @@ public class Livro {
     private String titulo;
     private String autor;
     private int anoPublicacao;
-public Livro(String titulo, String autor, int anoPublicacao){
+public Livro(String titulo, String autor, Class<Integer> class1){
     this.titulo = titulo;
     this.autor = autor;
     this.anoPublicacao = anoPublicacao;
