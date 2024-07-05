@@ -11,7 +11,7 @@ public class ConjuntoConvidados{
         this.convidadosSet = new HashSet<>();
     }
     //métodos:
-    public void adicionarConvidadoPorCodigoConvite(int codigoConvite){
+    public void adicionarConvidadoPorCodigoConvite(String nome, int codigoConvite){
         convidadosSet.add(new Convidado(nome, codigoConvite));
     }
     public void removerConvidadoPorCodigoConvite(int codigoConvite){
@@ -51,10 +51,10 @@ public class ConjuntoConvidados{
         System.out.println("Existem" + conjuntoConvidados.contarConvidados() + " convidado(s) dentro do Set de Convidados");
  
         // adicionando convidados ao conjunto:
-        conjuntoConvidados.adicionarConvidado("Alice", 1234);
-        conjuntoConvidados.adicionarConvidado("Bob", 1235);
-        conjuntoConvidados.adicionarConvidado("Charlie", 1235);
-        conjuntoConvidados.adicionarConvidado("David", 1236);
+        conjuntoConvidados.adicionarConvidadoPorCodigoConvite("Alice", 1234);
+        conjuntoConvidados.adicionarConvidadoPorCodigoConvite("Bob", 1235);
+        conjuntoConvidados.adicionarConvidadoPorCodigoConvite("Charlie", 1235);
+        conjuntoConvidados.adicionarConvidadoPorCodigoConvite("David", 1236);
 
         //exibindo os convidados no conjunto:
         System.out.println("Convidaados no conjunto:");

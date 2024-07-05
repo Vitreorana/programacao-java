@@ -1,5 +1,7 @@
 package Set.OperacoesBasicas;
 
+import java.util.Objects;
+
 public class Convidado {
     //atributos:
     private String nome;
