@@ -57,7 +57,7 @@ public class ConjuntoConvidados{
         conjuntoConvidados.adicionarConvidadoPorCodigoConvite("David", 1236);
 
         //exibindo os convidados no conjunto:
-        System.out.println("Convidaados no conjunto:");
+        System.out.println("Convidados no conjunto:");
         conjuntoConvidados.exibirConvidado();
 
         //exibindo o número atualizado de convidados no conjunto
