@@ -1,5 +1,5 @@
-
 package List.PesquisaEmList;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,7 +29,7 @@ public class CatalogoLivros {
 }
         return livrosPorAutor;
 }
-    public List<Livro>pesquisarPorIntervaloAnos(int anoInicial, int anoFinal){
+    public List<Livro>pesquisarPorIntervaloAnos(Integer anoInicial, Integer anoFinal){
         if(!livroList.isEmpty()){
             for(Livro l : livroList){
                     if(l.getAnoPublicacao() >= anoInicial && l.getAnoPublicacao() <= anoFinal);
