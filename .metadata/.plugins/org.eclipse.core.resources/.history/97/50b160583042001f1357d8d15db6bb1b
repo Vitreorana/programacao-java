@@ -1,0 +1,8 @@
+public abstract class ContaCorrente extends Conta {
+    // esta classe herda tudo da Conta ao usar o extends.
+	public void imprimirExtrato() {
+		System.out.println("*** Extrato Conta Corrente ***");
+		super.imprimirInfosComuns();
+	}
+		
+}

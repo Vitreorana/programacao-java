@@ -1,0 +1,23 @@
+1720990852519	Renomear o tipo 'ContaPoupança'
+1720995921079	Copy compilation unit
+1720995933422	Copy compilation unit
+1720995937231	Copy compilation unit
+1720995962201	Delete element
+1720995969582	Delete element
+1720995975903	Delete element
+1720995989070	Delete element
+1720996000858	Delete element
+1720996015944	Delete element
+1720996020960	Delete element
+1720996025614	Delete element
+1720996032366	Delete element
+1720996037875	Delete element
+1720996062800	Delete element
+1720996068329	Delete element
+1720996072548	Delete element
+1720996088064	Mover "ContaCorrente.java" a "CriacaoBancoDigital"
+1720996099257	Mover "ContaPoupanca.class" a "CriacaoBancoDigital"
+1720996108148	Mover "ContaPoupanca.java" a "CriacaoBancoDigital"
+1720996119171	Mover "Main.class" a "CriacaoBancoDigital"
+1720996129075	Mover "Main.java" a "CriacaoBancoDigital"
+1720996140713	Mover "EConta.java" a "CriacaoBancoDigital"

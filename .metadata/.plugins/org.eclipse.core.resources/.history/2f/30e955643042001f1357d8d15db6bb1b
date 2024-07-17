@@ -1,0 +1,6 @@
+public abstract class ContaPoupanca extends Conta {
+	public void imprimirExtrato() {
+		System.out.println("*** EXtrato Conta Poupança ***");
+		super.imprimirInfosComuns();
+	}
+}
