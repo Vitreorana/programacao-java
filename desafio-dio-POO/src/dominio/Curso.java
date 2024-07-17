@@ -1,8 +1,13 @@
 public class Curso {
+    //atributos
     private String titulo;
     private String descricao;
     private int cargaHoraria;
 
+    //construtor vazio:
+    public Curso(){
+
+    }
     public String getTitulo() {
         return titulo;
     }

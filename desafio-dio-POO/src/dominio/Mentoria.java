@@ -1,9 +1,15 @@
 import java.time.LocalDate;
 
 public class Mentoria {
+    //atributos:
     private String titulo;
     private String descricao;
     private LocalDate data;
+
+    //construtor vazio:
+    public Mentoria(){
+
+    }
 
     public String getTitulo() {
         return titulo;
@@ -31,7 +37,7 @@ public class Mentoria {
 
     @java.lang.Override
     public java.lang.String toString() {
-        return "Mentoris{" +
+        return "Mentoria{" +
                 "titulo='" + titulo + '\'' +
                 ", descricao='" + descricao + '\'' +
                 ", data=" + data +
