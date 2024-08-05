@@ -92,7 +92,5 @@ public class Bootcamp {
     }
     public void setConteudos(Set<Conteudo> conteudos) {
         this.conteudos = conteudos;
-    }
-
-    
+    }  
 }
