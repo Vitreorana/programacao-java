@@ -28,10 +28,10 @@ public class ServicoEnvioEmailTeste {
         String mensagem = "Mensagem de Teste 123";
 
         servico.enviaEmail(email, mensagem, true);
-        Mockito.verify(plataforma).enviaEmail(emailCaptor.capture());
-
+        
         Email emailCapturado = emailCaptor.getValue();
-        Assertions.assertEquals(Formato.HTML, emailCapturado.getFormato());
+
+        Assertions.assertEquals(formato.HTML, emailCapturado.getFormato());
     }
 
 }

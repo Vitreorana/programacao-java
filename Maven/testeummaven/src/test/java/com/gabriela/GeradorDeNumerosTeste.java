@@ -10,7 +10,6 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import java.util.List;
 
 import static org.mockito.Mockito.anyInt;
-import static org.mockito.Mockito.when;
 
 /**
  * Teste da classe {@Link GeradorDeNumeros} exemplificando testes de métodos estáticos
@@ -41,4 +40,4 @@ public class GeradorDeNumerosTeste {
 
         Assertions.assertEquals(integers, GeradorDeNumeros.geraNumerosAleatorios());
     }
-
+}

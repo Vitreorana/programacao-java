@@ -6,9 +6,9 @@ public class Email {
 
     private String mensagem;
 
-    private Formato formato;
+    private String formato;
 
-    public Email(String enderecoEmail, String mensagem, Formato formato) {
+    public Email(String enderecoEmail, String mensagem, String formato) {
         this.enderecoEmail = enderecoEmail;
         this.mensagem = mensagem;
         this.formato = formato;
@@ -22,7 +22,7 @@ public class Email {
         return mensagem;
     }
 
-    public Formato getFormato() {
+    public String getFormato() {
         return formato;
     }
 }
