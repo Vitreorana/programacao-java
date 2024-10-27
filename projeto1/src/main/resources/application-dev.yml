@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url:jdbc:h2:mem:sdw2023 //gostaríamos de ter um banco h2 com esse nome
+    username:sdw2023 // e usuário
+    password:
+  jpa:
+    show-sql: true
+    open-in-view: false
+    hibernate:
+      ddl-auto:create # validate | update | create | create-drop
+      // se o ddl está como create isso faz com que o "rabernate" crie nossas tabelas
+    properties:
+      hibernate:
+        format_sql: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console  // para ter um console do h2 para assessar  nosso banco via browser
+      settings:
+        trace: false
+        web-allow-others: false
