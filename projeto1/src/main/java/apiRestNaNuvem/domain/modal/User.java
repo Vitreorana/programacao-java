@@ -1,3 +1,5 @@
+package java.apiRestNaNuvem.domain.modal;
+
 
 
 import java.util.List;
@@ -11,6 +13,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 
+@SuppressWarnings("hiding")
 @Entity(name = "tb_user") // tb_user é o nome da tabela 
 public class User<Account, Card, News, Feature> {
     @Id

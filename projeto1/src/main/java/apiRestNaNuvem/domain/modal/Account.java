@@ -1,3 +1,5 @@
+package java.apiRestNaNuvem.domain.modal;
+
 import java.math.BigDecimal;
 
 import jakarta.persistence.Column;
@@ -19,14 +21,14 @@ public class Account {
    
     private String agency;
 
-       @Column(nullable = false, scale = 13, precision = 2) 
+       @Column(nullable = false, precision = 13, scale = 2) 
     private BigDecimal balance;
     // o nullable como false é para evitar que valores nulos sejam enviados para a nossa tabela
-    // a precisão que queremos é 2
-    // a escala é a quantity de números que queremos
+    // a precisão que queremos é de 13 números
+    // a escala é a quantity de números que queremos após a vírgula
     // ou seja, 11 inteiros e dois decimais de precisão
     
-    @Column(name = "available_limit", scale = 13, precision = 2)
+    @Column(name = "available_limit", precision = 13, scale = 2)
     private BigDecimal limit;
     // colocamos o nome available_limit pq as vezes a palavra limit é uma
     //palavra reservada em alguns bancos de dados.

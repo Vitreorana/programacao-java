@@ -1,4 +1,4 @@
-
+package java.apiRestNaNuvem.domain.modal;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -15,7 +15,6 @@ public abstract class ItensBasicos {
 
     private String description;
 
-       
     public String getDescription() {
         return description;
     }
