@@ -1,12 +1,8 @@
 package java.apiRestNaNuvem.domain.modal;
 
-import java.math.BigDecimal;
+import jakarta.persistence.*;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import java.math.BigDecimal;
 
 @Entity(name = "tb_account")
 public class Account {
@@ -15,24 +11,25 @@ public class Account {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(unique = true) // dizemos que o número da conta é único
+    @Column(unique = true)
     private String number;
 
-   
     private String agency;
 
-       @Column(nullable = false, precision = 13, scale = 2) 
+    @Column(precision = 13, scale = 2)
     private BigDecimal balance;
-    // o nullable como false é para evitar que valores nulos sejam enviados para a nossa tabela
-    // a precisão que queremos é de 13 números
-    // a escala é a quantity de números que queremos após a vírgula
-    // ou seja, 11 inteiros e dois decimais de precisão
-    
-    @Column(name = "available_limit", precision = 13, scale = 2)
+
+    @Column(name = "additional_limit", precision = 13, scale = 2)
     private BigDecimal limit;
-    // colocamos o nome available_limit pq as vezes a palavra limit é uma
-    //palavra reservada em alguns bancos de dados.
-    
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public String getNumber() {
         return number;
     }
@@ -48,12 +45,21 @@ public class Account {
     public void setAgency(String agency) {
         this.agency = agency;
     }
-    
-    public Long getId() {
-        return id;
+
+    public BigDecimal getBalance() {
+        return balance;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setBalance(BigDecimal balance) {
+        this.balance = balance;
     }
+
+    public BigDecimal getLimit() {
+        return limit;
+    }
+
+    public void setLimit(BigDecimal limit) {
+        this.limit = limit;
+    }
+
 }

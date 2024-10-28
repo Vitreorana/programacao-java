@@ -1,37 +1,30 @@
 package java.apiRestNaNuvem.domain.modal;
 
-
+import jakarta.persistence.*;
 
 import java.math.BigDecimal;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-
 @Entity(name = "tb_card")
 public class Card {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(unique = true) // para que os números do cartão sejam únicos
+    @Column(unique = true)
     private String number;
-  
-    @Column(name = "additional_limit", scale = 13, precision = 2)
+
+    @Column(name = "available_limit", precision = 13, scale = 2)
     private BigDecimal limit;
-    // colocamos o nome additional_limit pq as vezes a palavra limit é uma
-    //palavra reservada em alguns bancos de dados.
 
-    public BigDecimal getLimit() {
-        return limit;
+    public Long getId() {
+        return id;
     }
 
-    public void setLimit(BigDecimal limit) {
-        this.limit = limit;
+    public void setId(Long id) {
+        this.id = id;
     }
-    
+
     public String getNumber() {
         return number;
     }
@@ -39,13 +32,13 @@ public class Card {
     public void setNumber(String number) {
         this.number = number;
     }
-    
-    public Long getId() {
-        return id;
+
+    public BigDecimal getLimit() {
+        return limit;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setLimit(BigDecimal limit) {
+        this.limit = limit;
     }
 
 }

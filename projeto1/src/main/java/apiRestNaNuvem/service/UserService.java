@@ -2,14 +2,9 @@ package java.apiRestNaNuvem.service;
 
 import java.apiRestNaNuvem.domain.modal.User;
 
-import org.springframework.stereotype.Service;
+public interface UserService {
 
-@Service
-public class UserService {
+    User findById(Long id);
 
-    public Object create(@SuppressWarnings("rawtypes") User userToCreate) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'create'");
-    }
-   
+    User create(User userToCreate);
 }
